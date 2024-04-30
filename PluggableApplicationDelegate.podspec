@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PluggableApplicationDelegate'
-  s.version          = '1.1.3'
+  s.version          = '1.1.4'
   s.summary          = 'Services oriented AppDelegate in Swift.'
   s.description      = <<-DESC
 PluggableApplicationDelegate is a way of decoupling AppDelegate, by splitting it into small modules called ApplicationService.
@@ -28,6 +28,7 @@ PluggableApplicationDelegate is an open class from which your AppDelegate needs 
   s.tvos.deployment_target = '10.0'
 
   s.source_files = 'PluggableApplicationDelegate/Classes/**/*'
+  s.resource_bundle = {"PluggableApplicationDelegate.privacy"=>"PluggableApplicationDelegate/PrivacyInfo.xcprivacy"}
   
   # s.resource_bundles = {
   #   'PluggableApplicationDelegate' => ['PluggableApplicationDelegate/Assets/*.png']
